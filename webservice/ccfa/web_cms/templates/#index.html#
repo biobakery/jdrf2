@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Microbiome Informatics Center" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Microbiome Bioinformatics Center" %}</li>
+{% endblock %}
+
+{% block left_panel %}{% endblock  %}
+
+{% block main %}
+<p>
+  We thus aim to create a Microbiome Consortium Data Coordinating
+  Center (JDRF-MCDCC), which will create a schema for data and metadata
+  organization that is driven by JDRF consortium consensus; implement
+  scalable tools for data storage, retrieval, and integration; implement
+  a web interface for data retrieval and deposition; and support and
+  train the microbiome consortium. Facilitation of the JDRF-MCDCC will
+  leverage our existing experience in comparable bioinformatics centers
+  for the Crohn's and Colitis Foundation of America; our work with the
+  Human Microbiome Project (HMP) and "HMP2" Center for Characterizing
+  the Gut Microbial Ecosystem in Inflammatory Bowel Disease
+  (http://ibdmdb.org); our ongoing collaborations and analyses of the
+  DIABIMMUNE and TEDDY microbiomes (in total nearly 20,000 samples); and
+  the computational infrastructure of the Harvard University Faculty of
+  Arts and Sciences Research Computing and the Broad Institute
+  information technology teams. Our goal is to provide the greatest
+  cost-benefit to the JDRF and its Microbiome Consortium members by
+  sharing common infrastructure, software, and protocols to help
+  accelerate translation of discoveries in the microbiome into
+  actionable T1D diagnostics and therapies.
+</p>
+
+<img src="{% static "img/new-main-banner.jpg"  %}" />
+{% endblock %}

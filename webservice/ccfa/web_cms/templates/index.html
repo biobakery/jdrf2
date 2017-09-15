@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "JDRF Microbiome Bioinformatics Center" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "JDRF Microbiome Bioinformatics Center" %}</li>
+{% endblock %}
+
+{% block left_panel %}{% endblock  %}
+
+{% block main %}
+<p class="text-justify">
+The JDRF Microbiome Bioinformatics Center (JDRF-MBIC) aims to create a common framework of computing infrastructure, software, and protocols to help translate the research of microbiome into actionable T1D diagnostics and therapies.  We seek to implement scalable tools for data storage, retrieval, and integration; implement a web interface for data retrieval and deposition; and support and train the microbiome consortium.  The Center will leverage existing computational infrastructure of the Harvard University Research Computing team.  At present, members of the Consortium include seven microbiome research groups from across the world.
+
+</p>
+
+<img src="{% static "img/new-main-banner.jpg"  %}" />
+{% endblock %}
