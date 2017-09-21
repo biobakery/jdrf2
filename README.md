@@ -1,4 +1,4 @@
-# README #
+# JDRF MBIC CMS #
 
 This repository contains the source and configuration for the JDRF MBIC site.
 
@@ -17,9 +17,9 @@ This repository contains the source and configuration for the JDRF MBIC site.
 
     a. ``$ sudo docker create -it --env-file keys.env -p 80:80 --name jdrf_mbic_container jdrf_mbic bash``
 
-    b. ``$ sudo docker start jdrf_mbic_container"
+    b. ``$ sudo docker start jdrf_mbic_container``
     
-    c. ``$ sudo docker exec -it jdrf_mbic_container bash"
+    c. ``$ sudo docker exec -it jdrf_mbic_container bash``
     
 8. From in the container, first run the configuration script to start services running in the container and to setup the environment. Then run gunicorn to start the site.
 
