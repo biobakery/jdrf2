@@ -1,9 +1,0 @@
-[console_scripts]
-mibc_tm = mibc.tm.cli:main
-mibc_tm_daemon = mibc.tm.cli_daemon.main
-mibc_build = mibc.automated.cli:main
-email-validate = mibc.email.cli:main
-
-[distutils.commands]
-web_setup = web_cms.local_setup:LocalSetupCommand
-

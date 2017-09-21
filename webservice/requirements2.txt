@@ -1,6 +1,0 @@
--e git+https://rschwager-hsph@bitbucket.org/biobakery/anadama.git@HEAD#egg=anadama
--e git+https://rschwager-hsph@bitbucket.org/biobakery/anadama_workflows.git@HEAD#egg=anadama-workflows
-biom-format==2.1.5
-cogent==1.5.3
-# -e git+https://bitbucket.org/biobakery/ccfa.git@f30fcf7e8dda7b48d88d094bf0e81a4219a8a120#egg=mibc
-biopython==1.66

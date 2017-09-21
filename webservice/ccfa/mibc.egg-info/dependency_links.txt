@@ -1,2 +1,0 @@
-git+https://bitbucket.org/biobakery/anadama.git@master#egg=anadama-0.0.1
-git+https://bitbucket.org/biobakery/anadama_workflows.git@master#egg=anadama_workflows-0.0.1
