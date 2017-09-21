@@ -1,0 +1,205 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>JDRF MBIC Team</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'bootstrap/css/jumbotron.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/album.css' %}" rel="stylesheet"> 
+    <link href="{% static 'css/album.css' %}" rel="stylesheet"> 
+  </head>
+
+   <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: #e3ede4" href="/">JDRF MBIC</a>
+        </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/team">Team</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              </li>
+            </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success" style="background: #11511b" disabled>Log in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container" style="background: url('{% static 'img/large_figure.png' %}') no-repeat center">
+        <img src="{% static 'img/hutlab_jdrf_logo_small_border.png' %}" heigh=100 width=125>
+      </div>
+    </div>
+
+    <div class="album">
+     <div class="container">
+          <h2>Team</h2>
+          <p>Members of the consortium include microbiome research groups from across the world.</p>
+        <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://med.nyu.edu/medicine/labs/blaserlab/images/CLxCC-blasem01.jpg" height=150></p>
+            <p class="card-text bold">Martin Blaser (PI), Xuesong Zhang</p>
+            <p class="card-text bold"><a href="https://med.nyu.edu/education">NYU School of Medicine</a></p>
+            <p class="card-text">Effect of early life antibiotic exposure on type 1 diabetes in NOD mice</p>
+            <p class="card-text"><a href="https://med.nyu.edu/medicine/labs/blaserlab/">Blaser Lab</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://pathology.uchicago.edu/sites/pathology.uchicago.edu/files/styles/columnwidth-wider/public/uploads/images/Chervonsky%2C%20A.%20IMG_1%20%282%29.jpg?itok=6OQn-Tti" height=150></p>
+            <p class="card-text bold">Alexander Chervonsky (PI)</p>
+            <p class="card-text bold"><a href="https://www.uchicago.edu/">The University of Chicago</a></p>
+            <p class="card-text">Microbiota, diet and type 1 diabetes</p>
+            <p class="card-text"><a href="http://achlab.bsd.uchicago.edu/index.html">Chervonsky Lab</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.adelaide.edu.au/robinson-research-institute/researchers/group-leaders/jennifer-couper.png" height=150></p>
+            <p class="card-text bold">Jennifer Couper (PI), Tony Papenfuss</p>
+            <p class="card-text bold"><a href="https://www.adelaide.edu.au/">University of Adelaide</a></p>
+            <p class="card-text">Environmental Determinants of Islet Autoimmunity (ENDIA) study; Early environmental determinants of pancreatic islet autoimmunity (ENDIA)</p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.sickkids.ca/images/Staff%20profiles/9335-05287.jpg" height=150></p>
+            <p class="card-text bold">Jayne Danska (PI), Alexandra Paun</p>
+            <p class="card-text bold"><a href="https://www.sickkids.ca/">The Hospital for Sick Children</a></p>
+            <p class="card-text">Humoral Immune Response against the Gut Microbiome Distinguishes Healthy Individuals from Subjects at Risk for Type 1 Diabetes</p>
+            <p class="card-text"><a href="http://www.sickkids.ca/Research/Danska-lab/">Danska Lab</a></p>
+          </div> 
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://i1.rgstatic.net/ii/profile.image/AS%3A282672900395022%401444405879322_l/Julien_Diana.png" height=150></p>
+            <p class="card-text bold">Julien Diana (PI)</p>
+            <p class="card-text bold"><a href="http://english.inserm.fr/">INSERM</a></p>
+            <p class="card-text">Exploring the regulatory roles of antimicrobial peptides on beta-cell function and the immune system: implication for future therapy against type 1 diabetes</p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.hsr.it/wp-content/uploads/2009/11/falconeweb091.jpg" height=150></p>
+            <p class="card-text bold">Marika Falcone (PI)</p>
+            <p class="card-text bold"><a href="http://www.fondazionesanraffaele.it/">Fondazione Centro San Raffaele</a></p>
+            <p class="card-text">Exploiting the therapeutic potential of Treg cell-inducing Clostridia in T1D; Nutritional interventions aimed at preventing T1D by inducing a tolerogenic gut environment</p>
+            <p class="card-text"><a href="http://www.hsr.it/research/organization/divisions-centers/division-of-immunology-transplantation-and-infectious-diseases/marika-falcone/">Falcone Lab</a></p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://di.uq.edu.au/sites/di.uq.edu.au/files/styles/uq_core_small_portrait/public/ckfinder/images/staff_profile/2724.png?itok=n2dmPseo" height=150></p>
+            <p class="card-text bold">Emma Hamilton-Williams (PI)</p>
+            <p class="card-text bold"><a href="https://www.uq.edu.au/">The University of Queensland</a></p>
+            <p class="card-text">A genetic link between gut microbial flora and T1D susceptibility</p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://ibdmdb.org/static/media/uploads/mugs2/.thumbnails/huttenhower.jpg/huttenhower-100x146.jpg" height=150></p>
+            <p class="card-text bold">Curtis Huttenhower (PI), Cesar Arze, Kevin Bonham, Lauren McIver</p>
+            <p class="card-text bold"><a href="https://www.hsph.harvard.edu/">Harvard T.H. Chan School of Public Health</a></p>
+            <p class="card-text">A bioinformatics platform for the JDRF</p>
+            <p class="card-text"><a href="http://huttenhower.sph.harvard.edu/">Huttenhower Lab</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://microbiome.uchicago.edu/sites/microbiome.uchicago.edu/files/styles/columnwidth-wider/public/uploads/images/Bana%20Jabri%20head%20crop%20smaller.jpeg?itok=uzZGbfSp" height=150></p>
+            <p class="card-text bold">Bana Jabri (PI)</p>
+            <p class="card-text bold"><a href="https://www.uchicago.edu/">The University of Chicago</a></p>
+            <p class="card-text">Role of Intestinal inflammation in the Pathogenesis of Type-1 Diabetes</p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://pediatricresearchcenter.helsinki.fi/images/research_groups/mikael_knip_250.jpg" height=150></p>
+            <p class="card-text bold">Mikael Knip (PI)</p>
+            <p class="card-text bold"><a href="http://www.utu.fi/en/">University of Turku</a></p>
+            <p class="card-text">Blood Microbiota: A Novel Biomarker of the Leaky Gut Hypothesis in Infants with HLA-Conferred Susceptibility to Type 1 Diabetes and in Children with Clinical Type 1 Diabetes</p>
+            <p class="card-text"><a href="http://research.med.helsinki.fi/obesity/Knip/default.html">PEDIA Group</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www3.btk.fi/fileadmin/_processed_/csm_Riitan_kuva_5_36aaee530e.jpg" height=150></p>
+            <p class="card-text bold">Riitta Lahesmaa (PI), Harri Lahdesmaki</p>
+            <p class="card-text bold"><a href="http://www.utu.fi/en/">University of Turku</a></p>
+            <p class="card-text">Systems approach to elucidate microbiota-host response in T1D pathogenesis</p>
+            <p class="card-text"><a href="http://www3.btk.fi/research/research-groups/lahesmaa/">Molecular Systems Immunology Group</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://microcell.ufl.edu/wp-content/uploads/2013/04/Lorca300.jpg" height=150></p>
+            <p class="card-text bold">Graciela Lorca (PI)</p>
+            <p class="card-text bold"><a href="http://www.ufl.edu/">University of Florida</a></p>
+            <p class="card-text">Safety, tolerability and host response to Lactobacillus johnsonii</p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://www.tri.edu.au/sites/tri.edu.au/files/storage/medium/Jane.jpg?itok=Chf_n7sh" height=150></p>
+            <p class="card-text bold">Jane Mullaney (PI)</p>
+            <p class="card-text bold"><a href="https://www.uq.edu.au/">The University of Queensland</a></p>
+            <p class="card-text">A link between the gut microbiome and type 1 diabetes</p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://microcell.ufl.edu/wp-content/uploads/2013/04/Triplett300.jpg" height=150></p>
+            <p class="card-text">Eric Triplett (PI), Lexi Ardissone</p>
+            <p class="card-text bold"><a href="http://www.ufl.edu/">University of Florida</a></p>
+            <p class="card-text">Separating the Signal from the Noise in the Autoimmune Microbiome for Type 1 Diabetes</p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://az736297.vo.msecnd.net/Profile/images/1f90559c-ac06-42dd-9ed0-3429558a95e9_w0" height=150></p>
+            <p class="card-text bold">Li Wen (PI)</p>
+            <p class="card-text bold"><a href="https://www.yale.edu/">Yale University</a></p>
+            <p class="card-text">Study of oral microbiota in prediction of T1D development</p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.clemson.edu/science/departments/chemistry/images/faculty/dwhitehead.jpg" height=150></p>
+            <p class="card-text bold">Daniel Whitehead (PI)</p>
+            <p class="card-text bold"><a href="http://www.clemson.edu/">Clemson University</a></p>
+            <p class="card-text">Inhibition of Gut Microbial Polysaccharide Metabolism as a Novel Potential Therapeutic for the Prevention of Autoimmunity Associated with Type-1 Diabetes</p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="https://ibdmdb.org/static/media/uploads/mugs2/.thumbnails/xavier.jpg/xavier-100x146.jpg" height=150></p>
+            <p class="card-text bold">Ramnik Xavier (PI), Tommi Vatanen</p>
+            <p class="card-text bold"><a href="https://www.broadinstitute.org/">Broad Institute</a></p>
+            <p class="card-text">Early Events in Type 1 Diabetes; Towards a systems level understanding of the gut microbiome and T 1 DM risk</p>
+            <p class="card-text"><a href="https://ccib.mgh.harvard.edu/xavier">Xavier Lab</a></p>
+          </div>
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.diabetes.med.tum.de/sites/www.diabetes.med.tum.de/files/field/image/Anette_Ziegler.jpg" height=150></p>
+            <p class="card-text bold">Anette-Gabriele Ziegler (PI)</p>
+            <p class="card-text bold"><a href="https://www.helmholtz-muenchen.de/en/idf/index.html">Institute of Diabetes Research, Helmholtz Center Munich</a></p>
+            <p class="card-text">Collaborative Research on Munich cohort studies - Biobank and Database</p>
+          </div>
+          </div>
+          <div class="row" style="background: white">
+          <div class="card" style="border: 5px solid #e3ede4">
+            <p class="card-text"><img class="img_card" src="http://www.ucdenver.edu/academics/colleges/medicalschool/centers/BarbaraDavis/Research/Faculty/PublishingImages/Zipris_10-12-15.jpg" height=150></p>
+            <p class="card-text bold">Danny Zipris (PI), Miranda Kroehl</p>
+            <p class="card-text bold"><a href="http://www.ucdenver.edu/pages/ucdwelcomepage.aspx">University of Colorado Denver</a></p>
+            <p class="card-text">Host-Microbiota Interactions in Subjects at Risk for Type 1 Diabetes</p>
+            <p class="card-text"><a href="http://www.ucdenver.edu/academics/colleges/medicalschool/centers/BarbaraDavis/Research/Faculty/Pages/DannyZipris.aspx">Zipris Lab</a></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+    </div> <!-- /container -->
+  </body>
+</html>
