@@ -1,0 +1,6 @@
+set -x
+# this file contains default keys
+# please change them to custom keys before configuring a new site
+export JDRF_SECRET_KEY="@4rso0onuj+z!efl)c5^w_qgqx+jz*_i2t=lx$x+m#8n7i7m5%"
+export JDRF_PASSWORD="jdrf_password"
+
