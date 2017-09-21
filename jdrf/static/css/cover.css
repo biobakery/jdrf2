@@ -1,0 +1,16 @@
+
+body {
+  background-color: #fff;
+  background: url("../img/large_figure.png"); 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  
+  /* color: #fff; 
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-color: black;
+  background-color: black; */
+}
+
+
