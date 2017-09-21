@@ -8,7 +8,7 @@ This repository contains the source and configuration for the JDRF MBIC site.
 2. Clone or download a copy of this repository.
 3. Change directories to the main folder of this repository.
 4. Edit the secret keys/passwords (in ``keys.env`` to customize your setup).
-5. Edit the settings file (in ``jdrf/settings.py`` to add your host name).
+5. Edit the settings file (in ``jdrf/jdrf/settings.py`` to add your host name).
 6. Build a Docker image containing all dependencies for the site.
 
     a. ``$ sudo docker build -t jdrf_mbic ./``
