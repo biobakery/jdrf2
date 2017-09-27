@@ -25,7 +25,7 @@ RUN pip install --upgrade pip && \
     pip install setuptools && \
     pip install supervisor && \
     pip install django==1.11.0 gunicorn==19.7 MySQL-python==1.2.5 && \
-    pip install django-filer
+    pip install django-filer==1.2.8
 
 # add supervisor conf
 RUN mkdir -pv /var/log/supervisord
