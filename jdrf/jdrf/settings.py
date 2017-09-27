@@ -33,7 +33,7 @@ SECRET_KEY = get_env('JDRF_SECRET_KEY')
 DEBUG = True
 
 # ADD the host for this app here
-ALLOWED_HOSTS = ['34.227.194.92']
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -45,7 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages'
+    'pages',
+    'easy_thumbnails',
+    'filer',
+    'mptt',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +138,8 @@ STATIC_URL = '/static/'
 # ADD path to static root
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+# django-filer settings
+FILER_IS_PUBLIC_DEFAULT = True
