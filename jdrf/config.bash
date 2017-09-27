@@ -3,6 +3,9 @@
 supervisord -c /etc/supervisord.conf
 supervisorctl start nginx
 
+# set permissions right here for MySQL to start
+chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
+
 # start mysql if not alerady running
 /etc/init.d/mysql start
 
