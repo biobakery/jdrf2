@@ -24,4 +24,4 @@ urlpatterns = [
     url(r'^protocols/', include('pages.urls')),
     url(r'^contact/', TemplateView.as_view(template_name='contact.html')),
     url(r'^team/', TemplateView.as_view(template_name='team.html')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
