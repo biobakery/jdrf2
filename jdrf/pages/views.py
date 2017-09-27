@@ -7,14 +7,26 @@ import filer
 
 
 def protocols(request):
-    """Retrieves all protocols documents uploaded to the JDRF-MBIC using the
-    django-filer plugin and renders them to a page for download.
+    """
+    Generates page containing all JDRF-MBIC protocols. Takes any files
+    uploaded via the django-filer plugin and renders them to this page.
+
+    Arguments:
+        request (django.http.HttpRequest.POST): A dictionary-like object
+            containing all given HTTP POST parameters
+
+    Requires:
+        None
+
+    Returns:
+        django.http.HttpResponse: An HTTP response class with a string as
+            content.
     """
     protocol_folders = []
-    protocol_root_folder = filer.models.Folder.objects.filter(name='Protocols')
+    filer_folders = filer.models.Folder.objects.filter(name='Protocols')
 
-    if protocol_root_folder:
-        protocol_root_folder = protocol_root_folder[0]
+    if filer_folders:
+        protocol_root_folder = filer_folders[0]
         protocol_folders = protocol_root_folder.children.all()
 
-    return render(request, 'protocols.html', {protocols: protocol_folders})
+    return render(request, 'protocols.html', {'protocols': protocol_folders})

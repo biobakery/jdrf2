@@ -64,30 +64,30 @@
       <p>Shared protocols used by, or developed by the JDRF consortium will be provided here as they become available.</p>
 
       <div id="accordion" class="panel-group">
-      	{% for protocol in protocols %}
-			<div class="panel panel-default">
-			  <div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-parent="#accordion" href="#collapse_{{ forloop.counter }}">{{ protocol.name }}</a>
-				</h4>
-			  </div>
-              <div id="collapse_{{ forloop.counter }}" class="panel-collapse collapse">
-			    <div class="panel-body">
-                  {% for protocol_doc in protocols.files.all %}
-                    <h5><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a class="protocol-doc" href="{{ protocol_doc.url }}">{{ protocol_doc.name }}</a></h5>
-                    <p>{{ protocol_doc.description }}</p>
-                  {% endfor %}
-				</div>
-			  </div>
-			</div>
+        {% for protocol in protocols %}
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_{{ forloop.counter }}">{{ protocol.name }}</a>
+              </h4>
+            </div>
+            <div id="collapse_{{ forloop.counter }}" class="panel-collapse collapse">
+              <div class="panel-body">
+                {% for protocol_doc in protocol.files.all %}
+                  <h5><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a class="protocol-doc" href="{{ protocol_doc.url }}">{{ protocol_doc.name }}</a></h5>
+                  <p>{{ protocol_doc.description }}</p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
         {% endfor %}
-	  </div> <!-- /accordion -->
+      </div> <!-- /accordion -->
 
       <hr>
     </div> <!-- /container -->
 
     <!-- Javascript includes -->
     <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
   </body>
 </html>
