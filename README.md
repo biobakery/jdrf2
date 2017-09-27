@@ -1,6 +1,6 @@
-# JDRF MBIC CMS #
+# JDRF2 MBIC #
 
-This repository contains the source and configuration for the JDRF MBIC site.
+This repository contains the source and configuration for the JDRF2 MBIC site.
 
 ### Install ###
 
