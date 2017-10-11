@@ -1,8 +1,5 @@
 FROM ubuntu:16.04
 
-# copy django site to image
-COPY jdrf/ /usr/local/src/jdrf/
-
 # install dependencies from packages
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
@@ -19,6 +16,9 @@ RUN apt-get update -y && \
         dialog \
         net-tools \
 	nginx
+
+# clone the django site
+RUN git clone https://github.com/biobakery/jdrf2.git /usr/local/src/
 
 # install python dependencies
 RUN pip install --upgrade pip && \
