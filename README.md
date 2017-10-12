@@ -2,6 +2,8 @@
 
 This repository contains the source and configuration for the JDRF2 MBIC site.
 
+This site hosts data analysis on post-processed (QCed) data.
+
 ### Install ###
 
 1. Install [Docker](https://www.docker.com/).
